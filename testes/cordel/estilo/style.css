@@ -73,7 +73,7 @@ section.imagem p {
 }
 
 section.imagem {
-    background-position: center right;
+    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 6px 6px 13px rgba(0,0,0,0.4);

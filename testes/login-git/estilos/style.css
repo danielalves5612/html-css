@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/*
+Cor: #24292e
+*/
+
+* {
+    font-family: system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background-color: #24292e;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    position: absolute;
+    padding: 20px;
+    width: 450px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#imagem > img {
+    height: 50px;
+    width: 50px;
+}
+
+div#imagem {
+    padding-top: 30px;
+    text-align: center;
+}
+
+div#imagem > h1 {
+    padding-top: 10px;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: normal;
+    margin-bottom: 20px;
+}
+
+div#formulario label {
+    display: block;
+    width: 100%;
+    color: white;
+    margin-bottom: 5px;
+}
+
+div#formulario p {
+    display: block;
+    margin: 10px 0px;
+    text-align: center;
+    color: white;
+}
+
+form input[type="submit"] {
+    margin-top: 10px;
+    background-color: rgb(23, 160, 23);
+    display: block;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    color: white;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+div.campo > input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #24292e;
+    cursor: pointer;
+}
+
+div.campo > input:hover {
+    border: 1px solid rgb(45, 80, 175);
+}
+
+div.campo > a {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    text-align: right;
+    text-decoration: none;
+    color: #2e73b8;
+}
+
+div.campo > a:hover {
+    text-decoration: underline;
+}
+
+div.botao > a {
+    display: block;
+    border: 1px solid white;
+    width: 100%;
+    height: 40px;
+    font-size: 2em;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #3d4e6b;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+section#login > p {
+    text-align: center;
+    color: white;
+}
+
+section#login > p > a {
+    text-decoration: none;
+    color: #2e73b8;
+}
+
+section#login > p > a:hover {
+    text-decoration: underline;
+}
+
+div.botao  span {
+    font-size: 1.5em;
+    
+}
+
+footer {
+    padding: 10px;
+    background-color: #3d4e6b;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+footer a:hover {
+    color: #2e73b8;
+    text-decoration: underline;
+}
+

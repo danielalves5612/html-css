@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                    <img src="imagens/logo-git.png" alt="Logo do Github">
+                <h1>Sign in to GitHub</h1>
+            </div>
+            <div id="formulario">
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <label for="iusername">Username or email address</label>
+                        <input type="email" name="username" id="iusername">
+                    </div>
+                    <div class="campo">
+                        <a href="forgot.html">Forgot password?</a>
+                        <label for="ipassword">Password </label>
+                        <input type="password" name="password" id="ipassword">
+                    </div>
+                    <input type="submit" value="Sign in">
+                </form>
+                <p>or</p>
+                <div class="botao"><a href="passkey.html"><span class="material-symbols-outlined">passkey</span>Continue with passkey</a></div>
+                <div class="botao"><a href="google.html"><span class="material-symbols-outlined">g_mobiledata</span>Continue with Google</a></div>
+                <div class="botao"><a href="apple.html"><span class="material-symbols-outlined">ios</span>Continue with Apple</a></div>
+            </div>
+            <p>New to GitHub? <a href="create.html">Create an account</a></p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="docs.html">Docs</a></li>
+            <li><a href="contact.html">Contact Github Support</a></li>
+            <li><a href="manage.html">Manage cookies</a></li>
+            <li><a href="not-share.html">Do not share my personal information</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

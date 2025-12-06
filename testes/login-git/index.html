@@ -16,15 +16,15 @@
                 <h1>Sign in to GitHub</h1>
             </div>
             <div id="formulario">
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
                         <label for="iusername">Username or email address</label>
-                        <input type="email" name="username" id="iusername">
+                        <input type="email" name="username" id="iusername" required autocomplete="email" maxlength="25">
                     </div>
                     <div class="campo">
                         <a href="forgot.html">Forgot password?</a>
                         <label for="ipassword">Password </label>
-                        <input type="password" name="password" id="ipassword">
+                        <input type="password" name="password" id="ipassword" required minlength="8" maxlength="20">
                     </div>
                     <input type="submit" value="Sign in">
                 </form>

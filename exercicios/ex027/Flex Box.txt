@@ -64,3 +64,12 @@ Todo item dentro de um container, têm por padrão order 0.
 
 order -> colocando valores nos itens, o próprio css coloca eles em ordem crescente, partindo do 0, itens negativos vêm antes do 0 e itens positivos após o 0.
 align-self -> aplicado aos itens, levando em conta o cross-axis. Ele conta com 5 valores, sendo eles o auto, flex-start, flex-end, center, stretch -- o auto ele herda a posição que o pai estiver 
+fle-basis -> por padrão ele vêm como auto, o auto é basicamente a dependência do conteúdo de cada item, por exemplo, se tiver apenas uma letra dentro de um item, ele vai ser menor, caso tenha várias letras, ele vai ser bem maior.
+você pode colocar um valor fixo no flex-basis, como 200px, assim os itens terão esse tamanho independente do conteúdo, porém, caso você diminua o container, automaticamente o itens irão diminuir e não irão mais seguir o valor imposto 
+
+flex-shrink -> o quanto o item pode diminuir --> caso coloque no item valores diferentes, como 1 e 2, aquele com o número 2, vai diminuir o dobro do tamanho que o número 1. Caso coloque valores iguais, os dois irão diminuir na mesma proporção.
+flex-grow -> o quanto o item pode aumentar --> caso você coloque no item valores diferentes, como 1 e 2, aquele com o número 2 vai crescer o dobro do número 1, caso coloque números iguais, como 2, os dois irão ficar do mesmo tamanho crescendo por igual
+por padrão os itens estão com shrink 1 e grow 0 
+
+propriedade flex -> essa propriedade só é aplicada ao flex-item e serve como uma shorthand, você pode informar os valores de flex-basis, grow e shrink na mesma linha, basta lembrar que primeiro sempre vêm o grow, depois o shrink e por último o basis --> Caso você queria que o flex fique como padrão, pode colocar flex initial ou colocar os valores padrões (0 1 auto), pode usar também o flex none, significa que o item não vai ser flexível, ele não vai aumentar ou diminuir, pode colocar os valores (0 0 auto) também. o último valor é o flex auto, ele basicamente informa que o conteúdo vai aumentar caso seja necessário e diminuir caso seja necessário, é como se você tivesse colocado (1 1 auto)
+caso você coloque apenas um número, como flex 3, esse três significa que o grow vai ser 3 e o restante (shrink e basis) serão os valores padrões.
